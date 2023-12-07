@@ -12,6 +12,18 @@ void Paddle::update(float deltaTime) {
     sf::Vector2f position = m_shape.getPosition();
     position += m_velocity * deltaTime;
     m_shape.setPosition(position);
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+    {
+        // left key is pressed: move our character
+        Paddle::moveUp();
+    }
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+    {
+        // right key is pressed: move our character
+        Paddle::moveDown();
+    }
 }
 
 void Paddle::draw(sf::RenderWindow& window) {
