@@ -219,6 +219,9 @@ FinalProject_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 FinalProject_SOURCE_DIR:STATIC=/Users/katdizon/Desktop/cs 3520/FinalProject
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=SFML_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
