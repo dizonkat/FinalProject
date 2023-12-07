@@ -1,8 +1,6 @@
 # Pong!
 
 ## Overview
-!FEEL FREE TO EDIT THIS BASED ON YOUR UPDATES! (could  talk about features)
-
 A modernized twist on the classic Pong experience, featuring dynamic gameplay and innovative mechanics!
 
 ## External Libraries
@@ -12,6 +10,7 @@ A modernized twist on the classic Pong experience, featuring dynamic gameplay an
 ## Build Instructions
 
 ## How to Play
+To play, move the paddles with the up and down arrows.
 
 ## Gallery
 INCLUDE PHOTOS
