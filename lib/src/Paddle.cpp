@@ -1,4 +1,4 @@
-#include "Paddle.h"
+#include "../include/Paddle.h"
 
 Paddle::Paddle(float startX, float startY, float width, float height, sf::Color color) {
     m_shape.setSize(sf::Vector2f(width, height));

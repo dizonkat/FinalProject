@@ -1,4 +1,4 @@
-#include "Game.h"
+#include "../include/Game.h"
 
 Game::Game() : m_window(sf::VideoMode(800, 600), "Pong Game") {
     // Set up the initial state of the game

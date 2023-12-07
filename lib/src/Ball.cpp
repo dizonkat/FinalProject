@@ -1,4 +1,4 @@
-#include "Ball.h"
+#include "../include/Ball.h"
 
 Ball::Ball(float startX, float startY, float radius, sf::Color color) {
     m_shape.setRadius(radius);
