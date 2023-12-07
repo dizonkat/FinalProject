@@ -4,7 +4,7 @@ Ball::Ball(float startX, float startY, float radius, sf::Color color) {
     m_shape.setRadius(radius);
     m_shape.setFillColor(color);
     m_shape.setPosition(startX, startY);
-    m_velocity = sf::Vector2f(0.f, 0.f);
+    m_velocity = sf::Vector2f(10.f, 10.f);
 }
 
 void Ball::update(float deltaTime) {

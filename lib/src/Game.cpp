@@ -2,13 +2,7 @@
 
 Game::Game() : m_window(sf::VideoMode(800, 600), "Pong Game"), m_ball(400.f, 300.f, 10.f, sf::Color::White),
 m_paddle1(20.f, 250.f, 10.f, 100.f, sf::Color::White), m_paddle2(770.f, 250.f, 10.f, 100.f, sf::Color::White) {
-    // Set up the initial state of the game
-    // Create the ball
-    //m_ball = Ball(400.f, 300.f, 10.f, sf::Color::White);
-
-    // Create the paddles
-    //m_paddle1 = Paddle(20.f, 250.f, 10.f, 100.f, sf::Color::White);
-    //m_paddle2 = Paddle(770.f, 250.f, 10.f, 100.f, sf::Color::White);
+    m_window.setPosition(sf::Vector2i(10, 50));
 }
 
 void Game::run() {
