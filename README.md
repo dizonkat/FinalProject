@@ -13,4 +13,4 @@ A modernized twist on the classic Pong experience, featuring dynamic gameplay an
 To play, move the paddles with the up and down arrows.
 
 ## Gallery
-INCLUDE PHOTOS
+![image](https://github.com/dizonkat/FinalProject/assets/38923686/c57937ed-dbbd-4717-b133-5e96ccf28e34)
