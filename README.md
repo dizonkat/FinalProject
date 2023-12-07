@@ -1,7 +1,7 @@
 # Pong!
 
 ## Overview
-A modernized twist on the classic Pong experience, featuring dynamic gameplay and innovative mechanics!
+The classic Pong experience, featuring dynamic gameplay and innovative mechanics!
 
 ## External Libraries
 - [SFML](https://github.com/SFML/SFML): Simple and Fast Multimedia Library
