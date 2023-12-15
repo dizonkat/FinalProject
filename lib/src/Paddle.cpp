@@ -1,5 +1,4 @@
 #include "../include/Paddle.h"
-#include <iostream>
 
 Paddle::Paddle(float startX, float startY, float w, float h, sf::Color color) : width(w), height(h) {
     m_shape.setSize(sf::Vector2f(width, height));
@@ -11,13 +10,13 @@ Paddle::Paddle(float startX, float startY, float w, float h, sf::Color color) : 
 
 void Paddle::update(float deltaTime) {
     // Update the paddle's position based on its velocity
-    //sf::Vector2f position = m_shape.getPosition();
     position += m_velocity * deltaTime;
     m_shape.setPosition(position);
-
+    if ((position.y >= 600 - height / 2) || (position.y <= 0 - height / 2)) {
+        m_velocity.y = 0;
+    }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
     {
-        // left key is pressed: move our character
         if (position.y >= 0 - height/2) {
             Paddle::moveUp();
         }
@@ -28,15 +27,13 @@ void Paddle::update(float deltaTime) {
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
     {
-        // right key is pressed: move our character
-        if (position.y + height / 2 <= 600) {
+        if (position.y <= 600 - height / 2) {
             Paddle::moveDown();
         }
         else {
             m_velocity.y = 0;
         }
     }
-    //std::cout << m_velocity.y
 }
 
 void Paddle::draw(sf::RenderWindow& window) {
